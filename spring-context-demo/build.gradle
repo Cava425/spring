@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+}
+
+group 'org.springframework'
+version '5.3.25-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(":spring-context")
+    implementation project(":spring-beans")
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
